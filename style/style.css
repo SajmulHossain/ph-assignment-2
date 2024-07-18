@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color: rgb(230, 83, 60);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    opacity: 50%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* header section start */
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.logo p {
+    color: var(--color);
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.active {
+    background-color: var(--color);
+    border-radius: 46px;
+    padding: 8px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* banner section start */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-desc {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-desc h2 {
+    font-size: 75px;
+}
+
+.banner-desc p {
+    margin: 28px 0;
+}
+
+.shape {
+    font-family: "Dancing Script", cursive;
+}
+
+.club,
+.download {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.club {
+    background-color: var(--color);
+}
+
+.download {
+    border: 1px solid white;
+}
+
+.banner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.banner-img img {
+    width: 349px;
+    height: 580px;
+    position: relative;
+}
+
+.workout {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px 17px;
+    left: 430px;
+    top: 140px;
+}
+
+.workout h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.workout p {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.tutorial {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px 17px;
+    bottom: 60px;
+    right: 445px;
+}
+
+.circle {
+    background-color: var(--color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.tutorial h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.tutorial p {
+    letter-spacing: .5px;
+}
+/* banner section end */
+/* header section end */
