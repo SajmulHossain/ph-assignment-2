@@ -289,22 +289,60 @@ nav ul li a {
 /* calculator section start */
 
 .calculator {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.calc-header {
+    margin: 80px auto;
+    width: 70%;
+}
+
+.calc-header h2 {
+    font-size: 50px;
+}
+
+.calc-bg {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .calculator-container {
     display: flex;
     justify-content: space-between;
-}
-
-.calc-width {
+    padding: 40px 0;
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.calculator-container table caption {
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 
 table,th,td {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
+}
+
+td {
+    font-size: 14px;
+    font-weight: 200;
+    width: 150px;
+    padding: 10px 10px;
+}
+
+th {
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.calc-input {
+    width: 40%;
+}
+
+.calc-input-header p {
+    margin: 20px 0;
 }
 
 .input-container {
@@ -345,6 +383,22 @@ table,th,td {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
+}
+
+::placeholder, select {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.calc-input button {
+    background-color: var(--color);
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    letter-spacing: .3px;
 }
 /* calculator section end */
 
