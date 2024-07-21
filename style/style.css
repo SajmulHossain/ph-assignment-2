@@ -27,14 +27,15 @@ header {
 }
 
 .header {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    align-items: center;
+    padding-top: 70px;
     padding-bottom: 10px;
 }
 
@@ -99,6 +100,7 @@ nav ul li a {
     background-color: transparent;
     border: none;
     color: white;
+    text-transform: capitalize;
 }
 
 .club {
@@ -129,7 +131,7 @@ nav ul li a {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     padding: 24px 17px;
-    left: 430px;
+    left: 400px;
     top: 140px;
 }
 
@@ -141,6 +143,7 @@ nav ul li a {
 .workout p {
     font-size: 13px;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 .tutorial {
@@ -154,7 +157,7 @@ nav ul li a {
     background: rgba(255, 255, 255, 0.1);
     padding: 24px 17px;
     bottom: 60px;
-    right: 445px;
+    right: 400px;
 }
 
 .circle {
@@ -174,3 +177,175 @@ nav ul li a {
 }
 /* banner section end */
 /* header section end */
+
+
+/* main section start */
+
+
+/* habit section start */
+.habit {
+    margin-top: 80px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.h-header {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.h-header h2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+
+.h-header p {
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+
+.habit-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.habit-card {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.habit-img-container img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.habit-card-desc h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.habit-img-container p {
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+/* habit section end */
+
+/* run section start */
+.run {
+    max-width: 1280px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    padding: 35px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.run-desc {
+    width: 45%;
+}
+
+.run-desc h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.run-desc p {
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.run-desc button {
+    background-color: var(--color);
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 42px;
+    padding: 16px 40px;
+    margin-top: 35px;
+}
+
+.run-img {
+    width: 40%;
+}
+
+.run-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+/* run section end */
+
+/* calculator section start */
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+table,th,td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+.input-container {
+    display: grid;
+    grid-template-areas: 
+    "h w"
+    "a g"
+    "act act";
+    gap: 10px;
+}
+
+#height {
+    grid-area: h;
+}
+
+#weight {
+    grid-area: w;
+}
+#age {
+    grid-area: a;
+}
+
+#gender {
+    grid-area: g;
+}
+
+#activity {
+    grid-area: act;
+}
+
+#height,
+#weight,
+#age,
+#gender,
+#activity {
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+}
+/* calculator section end */
+
+/* main section end */
