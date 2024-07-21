@@ -402,4 +402,41 @@ th {
 }
 /* calculator section end */
 
+/* meet section start */
+.meet {
+    max-width: 1280px;
+    margin: 40px auto;
+}
+
+.meet-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+}
+
+.trainer-container {
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.trainer-name {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.trainer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* meet section end */
+
 /* main section end */
