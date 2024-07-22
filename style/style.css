@@ -518,6 +518,10 @@ footer {
         flex-direction: column;
     }
 
+    .banner-desc {
+        width: 100%;
+    }
+
     .banner-img {
         width: 100%;
     }
@@ -542,5 +546,47 @@ footer {
 
     .meet-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run {
+        gap: 30px;
+    }
+
+    .run-desc,
+    .run-img {
+        width: 100%;
+    }
+
+    .calculator {
+        padding: 0;
+    }
+
+    .calc-header {
+        padding: 0 30px;
+    }
+
+    .calculator-container {
+        padding: 10px 30px;
+        gap: 30px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .calc-header {
+        width: 100%;
+    }
+
+    .calc-input {
+        width: 100%;
+    }
+
+    footer {
+        padding: 0 30px;
+    }
+
+    .footer-container {
+        gap: 30px;
     }
 }
