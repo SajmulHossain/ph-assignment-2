@@ -440,3 +440,107 @@ th {
 /* meet section end */
 
 /* main section end */
+
+/* footer section start */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 30px auto 0;
+    padding: 40px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-desc {
+    width: 40%;
+}
+
+.important-link,
+.link-container-2 {
+    width: 20%;
+}
+
+.footer-desc h2 {
+    color: var(--color);
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.link-container-2 {
+    display: flex;
+    justify-content: end;
+}
+
+.link ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+}
+/* footer section end */
+
+
+/* small device media query */
+
+@media screen and (max-width: 540px) {
+    section {
+        padding: 10px 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner,
+    .habit-box,
+    .run,
+    .calculator-container,
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+    
+    .banner-desc h2 {
+        font-size: 4.5rem;
+    }
+    
+    .workout {
+        left: 280px;
+        top: 50px;
+    }
+    
+    .tutorial {
+        left: 50px;
+        bottom: 80px;
+    }
+
+    .habit-card {
+        width: 100%;
+    }
+
+    .meet-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
