@@ -309,6 +309,7 @@ nav ul li a {
 
 .calc-header h2 {
     font-size: 50px;
+    margin-bottom: 14px;
 }
 
 .calc-bg {
@@ -326,6 +327,7 @@ nav ul li a {
 .calculator-container table caption {
     font-size: 25px;
     margin-bottom: 40px;
+    text-align: left;
 }
 
 table caption {
@@ -399,11 +401,20 @@ td {
 #gender,
 #activity {
     padding: 10px 15px;
-    border-radius: 12px;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
     width: 100%;
+}
+
+input[type='text'] {
+    color: white;
+}
+
+#gender,
+#activity {
+    border-right: 15px solid transparent;
 }
 
 ::placeholder, select {
@@ -412,7 +423,7 @@ td {
 
 .calc-input button {
     background-color: var(--color);
-    padding: 20px 50px;
+    padding: 16px 40px;
     font-weight: bold;
     font-size: 18px;
     margin-top: 20px;
@@ -631,7 +642,8 @@ footer {
     .habit-box,
     .run,
     .calculator-container,
-    .footer-container {
+    .footer-container,
+    .exercise {
         flex-direction: column;
     }
 
@@ -710,18 +722,27 @@ footer {
         padding: 0;
     }
 
+    .calc-bg {
+        padding: 30px 30px;
+    }
+
     .calc-header {
         padding: 0 30px;
         margin: 40px 0;
     }
 
     .calculator-container {
-        padding: 10px 30px;
-        gap: 30px;
+        gap: 50px;
     }
 
     table {
         width: 100%;
+    }
+
+    .calculator-container table caption {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 20px;
     }
 
     .calc-header {
@@ -736,19 +757,55 @@ footer {
         width: 100%;
     }
 
-    #height,
-    #weight,
-    #age,
-    #gender,
-    #activity {
-        padding: 10px 15px;
+    .calc-input-header h2 {
+        font-size: 16px;
+    }
+
+    .meet-head h2 {
+        font-size: 32px;
+        margin-bottom: 10px ;
+    }
+
+    .exercise-section > h2 {
+        font-size: 32px;
+    }
+
+    .ex-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .ex-img img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .exercise {
+        padding: 10px;
+    }
+
+    .exercise p {
+        width: 100%;
     }
 
     footer {
         padding: 0 30px;
     }
 
+    .footer-desc {
+        width: 100%;
+    }
+
     .footer-container {
         gap: 30px;
+    }
+
+    .important-link,
+    .link-container-2 {
+        width: 100%;
+    }
+
+    .link-container-2 {
+        justify-content: start;
     }
 }
