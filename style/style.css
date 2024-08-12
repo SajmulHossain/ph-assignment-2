@@ -90,6 +90,11 @@ nav ul li a {
     margin: 28px 0;
 }
 
+.banner-desc div {
+    display: flex;
+    gap: 10px;
+}
+
 .shape {
     font-family: "Dancing Script", cursive;
 }
@@ -222,6 +227,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .habit-img-container img {
@@ -363,30 +369,28 @@ td {
 
 .input-container {
     display: grid;
-    grid-template-areas: 
-    "h w"
-    "a g"
-    "act act";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 10px;
 }
 
 #height {
-    grid-area: h;
+    grid-column: span 1;
 }
 
 #weight {
-    grid-area: w;
+    grid-column: span 1;
 }
 #age {
-    grid-area: a;
+    grid-column: span 1;
 }
 
 #gender {
-    grid-area: g;
+    grid-column: span 1;
 }
 
 #activity {
-    grid-area: act;
+    grid-column: span 2;
 }
 
 #height,
@@ -399,6 +403,7 @@ td {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
+    width: 100%;
 }
 
 ::placeholder, select {
@@ -607,7 +612,7 @@ footer {
 
 @media screen and (max-width: 540px) {
     section {
-        padding: 10px 30px;
+        padding: 0 20px;
     }
 
     nav ul{
@@ -622,11 +627,6 @@ footer {
         font-size: 20px;
     }
 
-    .banner-desc div {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .banner,
     .habit-box,
     .run,
@@ -635,8 +635,13 @@ footer {
         flex-direction: column;
     }
 
+    .nav-container {
+        padding-top: 10px;
+    }
+
     .banner-desc {
         width: 100%;
+        margin-top: 30px;
     }
 
     .banner-img {
@@ -645,20 +650,22 @@ footer {
     
     .banner-desc h2 {
         font-size: 36px;
-        width: 250px;
+        width: 270px;
     }
 
     .banner-desc p {
         width: 260px;
     }
+    
 
     .club,
     .download {
         padding: 16px 30px;
+        margin: 0;
     }
     
     .workout {
-        left: 220px;
+        left: 190px;
         top: 50px;
     }
 
@@ -667,6 +674,11 @@ footer {
         left: 0px;
         bottom: 140px;
     }
+
+    .workout h2,
+    .tutorial h2 {
+        font-size: 30px;
+    }
     
     .h-header h2 {
         font-size: 32px;
@@ -674,10 +686,6 @@ footer {
 
     .habit-box {
         gap: 40px;
-    }
-
-    .habit-card {
-        width: 100%;
     }
 
     .meet-container {
@@ -693,12 +701,18 @@ footer {
         width: 100%;
     }
 
+    .run-desc h2 {
+        font-size: 32px;
+        width: 80%;
+    }
+
     .calculator {
         padding: 0;
     }
 
     .calc-header {
         padding: 0 30px;
+        margin: 40px 0;
     }
 
     .calculator-container {
@@ -714,8 +728,20 @@ footer {
         width: 100%;
     }
 
+    .calc-header h2 {
+        font-size: 32px;
+    }
+
     .calc-input {
         width: 100%;
+    }
+
+    #height,
+    #weight,
+    #age,
+    #gender,
+    #activity {
+        padding: 10px 15px;
     }
 
     footer {
