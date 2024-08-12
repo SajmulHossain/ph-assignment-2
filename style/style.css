@@ -52,6 +52,10 @@ nav ul {
     gap: 45px;
 }
 
+nav div {
+    display: none;
+}
+
 .active {
     background-color: var(--color);
     border-radius: 46px;
@@ -130,7 +134,7 @@ nav ul li a {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 24px 17px;
+    padding: 15px 17px;
     left: 400px;
     top: 140px;
 }
@@ -155,9 +159,9 @@ nav ul li a {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 24px 17px;
+    padding: 15px 17px;
     bottom: 60px;
-    right: 400px;
+    left: 50px;
 }
 
 .circle {
@@ -606,8 +610,21 @@ footer {
         padding: 10px 30px;
     }
 
-    nav {
+    nav ul{
         display: none;
+    }
+
+    nav div {
+        display: block;
+    }
+
+    nav div i {
+        font-size: 20px;
+    }
+
+    .banner-desc div {
+        display: flex;
+        justify-content: space-between;
     }
 
     .banner,
@@ -627,17 +644,36 @@ footer {
     }
     
     .banner-desc h2 {
-        font-size: 4.5rem;
+        font-size: 36px;
+        width: 250px;
+    }
+
+    .banner-desc p {
+        width: 260px;
+    }
+
+    .club,
+    .download {
+        padding: 16px 30px;
     }
     
     .workout {
-        left: 280px;
+        left: 220px;
         top: 50px;
     }
+
     
     .tutorial {
-        left: 50px;
-        bottom: 80px;
+        left: 0px;
+        bottom: 140px;
+    }
+    
+    .h-header h2 {
+        font-size: 32px;
+    }
+
+    .habit-box {
+        gap: 40px;
     }
 
     .habit-card {
