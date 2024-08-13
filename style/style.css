@@ -297,12 +297,13 @@ nav ul li a {
 
 /* calculator section start */
 
-.calculator {
+/* .calculator {
     max-width: 1400px;
     margin: 0 auto;
-}
+} */
 
 .calc-header {
+    max-width: 1280px;
     margin: 90px auto;
     width: 70%;
 }
@@ -706,6 +707,7 @@ footer {
 
     .run {
         gap: 30px;
+        padding: 30px 20px;
     }
 
     .run-desc,
@@ -723,11 +725,11 @@ footer {
     }
 
     .calc-bg {
-        padding: 30px 30px;
+        padding: 30px 20px;
     }
 
     .calc-header {
-        padding: 0 30px;
+        padding: 0 20px;
         margin: 40px 0;
     }
 
@@ -789,7 +791,7 @@ footer {
     }
 
     footer {
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     .footer-desc {
